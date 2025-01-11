@@ -1,10 +1,9 @@
-import { login, signup } from './actions';
-import { SignIn1 } from '@/components/sign-in-1'; // Adjusted import path
+import { SignIn9 } from '@/components/sign-in-9'; // Adjusted import path
 
 export default function LoginPage() {
   return (
     <div>
-      <SignIn1 />
+      <SignIn9 />
     </div>
   );
 }

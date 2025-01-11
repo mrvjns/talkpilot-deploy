@@ -9,7 +9,12 @@ export default function Home() {
   return (
     
     <div>
-      TOPSECRET
+      <Banner1 />
+      <LpNavbar1 />
+      <HeroSection4 />
+      <FeatureSection9 />
+      <FaqSection1 />
+      <Footer3 />
     </div>
   );
 }

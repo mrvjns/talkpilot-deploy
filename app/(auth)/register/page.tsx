@@ -1,9 +1,9 @@
-import { SignUp1 } from '@/components/sign-up-1';
+import { SignUp7 } from '@/components/sign-up-7';
 
 export default function RegisterPage() {
   return (
     <div>
-      <SignUp1 />
+      <SignUp7 />
     </div>
   );
 }
