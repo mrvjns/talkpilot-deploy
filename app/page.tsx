@@ -1,8 +1,10 @@
+import { AppShell4 } from "@/components/app-shell-4";
+
 export default function Home() {
   return (
     
     <div>
-      TOPSECRET
+      <AppShell4 />
     </div>
   );
 }
