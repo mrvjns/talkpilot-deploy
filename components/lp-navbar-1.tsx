@@ -38,7 +38,7 @@ export function LpNavbar1() {
   return (
     <nav className="sticky top-0 z-50 bg-background py-3.5 md:py-4 isolate border-b border-bg-border">
       <div className="container relative px-6 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 m-auto">
-        <div className="flex justify-between">
+        <div className="flex justify-center w-full">
           <Link href="/">
             <Logo />
           </Link>
