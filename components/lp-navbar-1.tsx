@@ -9,7 +9,7 @@ import Link from "next/link";
 import { EnhancedButton } from "./ui/enhanced-button";
 
 const MENU_ITEMS = [
-  { label: "Startseite", href: "#" },
+  { label: "Startseite", href: "/startseite" },
   { label: "Funktionen", href: "#" },
   { label: "FAQ", href: "#" },
 ] as const;
