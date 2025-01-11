@@ -85,10 +85,13 @@ export function SignIn9() {
                 </Link>
               </div>
               <p className="text-sm text-center text-muted-foreground">
-                Don't have an account?{" "}
+                Dont have an account?{" "}
                 <Link className="underline text-foreground" href="/register">
                   Sign up
                 </Link>
+                {error && (
+                <p className="text-sm text-red-500">{error}</p>
+                )}
               </p>
             </div>
           </form>

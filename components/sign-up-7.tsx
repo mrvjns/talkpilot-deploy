@@ -52,7 +52,7 @@ export function SignUp7() {
               Create an account
             </h2>
             <p className="text-sm text-muted-foreground">
-              Let's get started. Fill in the details below to create your
+              Lets get started. Fill in the details below to create your
               account.
             </p>
           </div>
