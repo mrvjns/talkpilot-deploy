@@ -16,7 +16,7 @@ export function Banner1() {
         aria-label="Learn more about shadcn/ui kit Pro blocks"
       >
         <p className="text-sm text-white md:text-center text-left hover:underline">
-          <span className="font-semibold">Neues Update</span> · Demo-Version von Talkpilot ist jetzt in der Entwicklung
+          <span className="font-semibold">Neues Update</span> · Demo-Version in der Entwicklung
         </p>
         <ChevronsRight className="hidden md:block w-4 h-4 text-white" />
       </Link>
