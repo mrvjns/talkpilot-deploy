@@ -2,8 +2,13 @@
 
 import { X, ChevronsRight } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export function Banner1() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  if (!isVisible) return null;
+
   return (
     <aside 
       role="banner"
@@ -21,7 +26,7 @@ export function Banner1() {
         <ChevronsRight className="hidden md:block w-4 h-4 text-white" />
       </Link>
       <button 
-        onClick={() => {/* Add close handler */}}
+        onClick={() => setIsVisible(false)}
         className="absolute right-2 w-8 h-8 flex items-center justify-center rounded-md hover:bg-white/10"
         aria-label="Close announcement"
       >
