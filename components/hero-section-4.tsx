@@ -49,7 +49,12 @@ export function HeroSection4() {
               required
               aria-required="true"
             />
-            <EnhancedButton effect="expandIcon" icon={ArrowRightIcon} iconPlacement="right">
+            <EnhancedButton 
+              effect="expandIcon" 
+              icon={ArrowRightIcon} 
+              iconPlacement="right" 
+              onClick={() => window.location.href = "/login"}
+            >
               Demo anfordern
             </EnhancedButton>
 

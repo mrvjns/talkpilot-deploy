@@ -39,6 +39,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Input } from "@/components/ui/input";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const data = {
   user: {
@@ -191,19 +192,20 @@ export function AppShell4({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <div className="flex items-center gap-2 px-4 flex h-12 md:h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b border-border">
               <SidebarTrigger className="-ml-1" />
               <Separator orientation="vertical" className="mr-2 h-4" />
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem className="hidden md:block">
-                    <BreadcrumbLink href="#">
-                      Settings
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator className="hidden md:block" />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>API Settings</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
+              <Breadcrumb className="flex-grow">
+              <BreadcrumbList>
+                <BreadcrumbItem className="hidden md:block">
+                <BreadcrumbLink href="#">
+                  Settings
+                </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator className="hidden md:block" />
+                <BreadcrumbItem>
+                <BreadcrumbPage>API Settings</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
               </Breadcrumb>
+              <ModeToggle />
             </div>
             <div className="px-4 py-4 md:py-6 flex flex-col border-b border-border">
               {/* Main content */}
@@ -219,6 +221,7 @@ export function AppShell4({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <Input type="search" placeholder="Search" className="pl-8" />
                 </div>
               </div>
+              
             </div>
           </header>
           {/* Main content */}
